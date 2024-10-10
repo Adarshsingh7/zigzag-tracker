@@ -53,7 +53,7 @@ const GoogleMap = () => {
 	};
 
 	useEffect(() => {
-		const timerInterval = setInterval(fetchApiLocation, 10000);
+		const timerInterval = setInterval(fetchApiLocation, 5000);
 		return () => clearInterval(timerInterval);
 	}, []);
 
