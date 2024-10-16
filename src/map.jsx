@@ -79,7 +79,16 @@ const GoogleMap = () => {
 					mapId='da37f3254c6a6d1c'
 				>
 					{/* {tileLoaded && <Direction mapRef={mapRef} />} */}
-					{apiLocation && <Marker position={apiLocation} />}
+					{apiLocation && (
+						<Marker
+							icon=''
+							label={{
+								text: '🚍',
+								fontSize: '20px',
+							}}
+							position={apiLocation}
+						/>
+					)}
 				</Map>
 			) : (
 				<div className='flex justify-center items-center'>
